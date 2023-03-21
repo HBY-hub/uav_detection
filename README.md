@@ -4,9 +4,7 @@
 
 ### 1. YOLOV7 整体结构
 
-
-
-![e69186f0cbe46371a5aedbb20d6b6f8](.\img\e69186f0cbe46371a5aedbb20d6b6f8.png)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/e69186f0cbe46371a5aedbb20d6b6f8.png)
 
 
 
@@ -39,7 +37,7 @@ YOLOV7 的 backbone 如下图所示
 
 
 
-![img](https://pic4.zhimg.com/80/v2-51e6aa08680addc9ca70f1b2048a6c27_720w.webp)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/3.png)
 
 
 
@@ -49,7 +47,7 @@ YOLOV7 的 backbone 如下图所示
 
 **MP** 层 主要是分为 Maxpool 和 CBS , 其中 MP1 和 MP2 主要是通道数的比变化。
 
-![img](https://pic4.zhimg.com/80/v2-75a8f60c85ce28b69c528af09be1483f_720w.webp)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/4.png)
 
 backbone的基本组件就介绍完了，我们整体来看下 backbone，经过 4 个 CBS 后，接入例如一个 ELAN ，然后后面就是三个 MP + ELAN 的输出，对应的就是 C3/C4/C5 的输出，大小分别为 80 * 80 * 512 ， 40 * 40 * 1024， 20 * 20 * 1024。 每一个 MP 由 5 层， ELAN 有 8 层， 所以整个 backbone 的层数为 4 + 8 + 13 * 3 = 51 层， 从 0 开始的话，最后一层就是第 50 层。
 
@@ -73,7 +71,7 @@ ELAN-H 模块是我自己命名的，它和 backbone 中的 ELAN 稍微有点区
 
 
 
-![img](https://pic3.zhimg.com/80/v2-7a18558c9d458980b332eb32d680898a_720w.webp)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/5.png)
 
 
 
@@ -81,7 +79,7 @@ ELAN-H 模块是我自己命名的，它和 backbone 中的 ELAN 稍微有点区
 
 
 
-![img](https://pic1.zhimg.com/80/v2-99813d788bd2b050e054225a68e2f028_720w.webp)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/6.png)
 
 
 
@@ -89,7 +87,7 @@ ELAN-H 模块是我自己命名的，它和 backbone 中的 ELAN 稍微有点区
 
 RepConv 在训练和推理是有一定的区别。训练时有三个分支的相加输出，部署时会将分支的参数重参数化到主分支上。
 
-![img](https://pic4.zhimg.com/80/v2-1f39f33049b838cde8996c08343e1673_720w.webp)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/7.png)
 
 ## 训练与预测过程
 
