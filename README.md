@@ -172,4 +172,4 @@ for folder in folders:
 
 ### 样例展示
 
-![000541](.\img\000541.jpg)
+![000541](https://github.com/HBY-hub/uav_detection/blob/master/img/000541.jpg)
