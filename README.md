@@ -25,9 +25,11 @@ YOLOV7 的 backbone 如下图所示
 
 
 
-![img](https://pic4.zhimg.com/80/v2-f5bfcc492abb9d38d6ffab0ed05a0637_720w.webp)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/1.png)
 
-![img](https://pic2.zhimg.com/80/v2-8da343d878bfe713624acb8bac87c4fd_720w.webp)
+![img](https://github.com/HBY-hub/uav_detection/blob/master/img/2.png)
+
+
 
 
 
