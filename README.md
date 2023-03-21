@@ -6,7 +6,7 @@
 
 
 
-![e69186f0cbe46371a5aedbb20d6b6f8](C:\Users\HBY\AppData\Local\Temp\WeChat Files\e69186f0cbe46371a5aedbb20d6b6f8.png)
+![e69186f0cbe46371a5aedbb20d6b6f8](.\img\e69186f0cbe46371a5aedbb20d6b6f8.png)
 
 
 
@@ -172,4 +172,4 @@ for folder in folders:
 
 ### 样例展示
 
-![000541](C:\Users\HBY\Downloads\000541.jpg)
+![000541](.\img\000541.jpg)
